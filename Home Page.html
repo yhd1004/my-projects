@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<head>
+<html lang='en'>
+<meta charset='UTF-8'>
+<meta name='Generator'content='Sublime Text'>
+<meta name="Author"content=''>
+<meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>202405199506</title>
+  <style type='text/css'>
+    *{margin:0;
+      padding:0;
+      list-style: none;
+    }
+    body{
+      background:linear-gradient(to right,purple,black)}
+    #total{width:1400px;height:2300px;margin:0 auto;}
+    #header{width:1400px;
+     height:60px;
+     background:linear-gradient(to right,purple,black);
+     border:5px solid white;
+     margin:0 auto;
+     text-align:center;
+     font-size:40px;
+     line-height:60px;
+     font-weight:bolder;
+     color:white;
+     word-spacing:10px;
+   }
+    .nav{width:1400px;
+      height:50px;
+      background:linear-gradient(to right,purple,black);
+      color:white;
+      margin:0 auto;
+      postion:relative;
+      font-weight:bolder;
+    }
+    .nav .first{width:1200px;
+      height:45px;
+      margin:0 auto; 
+      position: relative;
+    }
+    .first>li{width:226px;
+      height: 43px;
+      border: 2px solid white;
+      border-radius:5px;
+      line-height: 38px;
+      float:left;
+      margin-top:2px;
+      text-align: center;
+      margin-left:10px;
+
+    }
+    .first>li:hover{background-color: mediumpurple;}
+    
+
+
+    
+    .dropfirst_one{display:none;}
+    .dropfirst_one>li{border:1px solid white;border-radius:5px;}
+    .first>li:hover .dropfirst_one{display:block; background-color: deeppink;}
+    .first>li:hover .dropfirst_one a{text-decoration:none;color:white;}
+    .first>li:hover .dropfirst_one>li:hover{background-color:darkred;}
+
+    .dropfirst_two{display:none;}
+    .dropfirst_two>li{border:1px solid white;border-radius:5px;}
+    .first>li:hover .dropfirst_two{display:block; background-color: yellowgreen;}
+    .first>li:hover .dropfirst_two a{text-decoration:none;color:white;}
+    .first>li:hover .dropfirst_two>li:hover{background-color:greenyellow;}
+
+    .dropfirst_three{display:none;}
+    .dropfirst_three>li{border:1px solid white;border-radius:5px;}
+    .first>li:hover .dropfirst_three{display:block; background-color: brown;}
+    .first>li:hover .dropfirst_three a{text-decoration:none;color:white;}
+    .first>li:hover .dropfirst_three>li:hover{background-color:rgb(130,24,30);}
+
+    .dropfirst_four{display:none;}
+    .dropfirst_four>li{border:1px solid white;border-radius:5px;}
+    .first>li:hover .dropfirst_four{display:block; background-color:blue;}
+    .first>li:hover .dropfirst_four a{text-decoration:none;color:white;}
+    .first>li:hover .dropfirst_four>li:hover{background-color:darkblue;}
+
+    .anchor{color:white;text-decoration:none;}
+    .individual{color:red;text-decoration:none;}
+    .individual:hover{color:darkred;}
+
+    .main_first{width:1400px;height:440px;px;margin:0 auto;clear:both}
+    #game_left{width:1000px;height:420px;border:5px groove mediumpurple;margin-top: 10px;line-height:30px;color:white;float:left;}
+    #introduction{width:300px;height:150px;margin-top:20px;margin-bottom:10px;margin-left:350px;}
+    .content_one{text-indent:2em;font-size:18px;}
+
+    #menu_game{width:300px;height:420px;border:5px solid orange;margin-top:10px;line-height:30px;color:white;float:left;margin-left:82px;}
+    .second{width:300px;height:420px;margin:0 auto;}
+    .second>li{width:298px;height:138px;border:1px solid white;text-align:center;font-size:20px;font-weight:bold;line-height:138px;}
+    .second>li:hover{background-color:deeppink;}
+    .second>li a{text-decoration:none;color:white;}
+
+    .main_second{width:1400px;height:440px;px;margin:0 auto;}
+    #anime_left{width:1000px;height:420px;border:5px groove mediumpurple;margin-top: 10px;line-height:30px;color:white;float:left;}
+    #introduction{width:300px;height:150px;margin-top:20px;margin-bottom:10px;margin-left:350px;border-radius:10px}
+    .content_two{text-indent:2em;font-size:18px;line-height:30px;}
+
+    #menu_anime{width:300px;height:420px;border:5px solid orange;margin-top:10px;line-height:30px;color:white;float:left;margin-left:82px;}
+    .third{width:300px;height:420px;margin:0 auto;}
+    .third>li{width:298px;height:68px;border:1px solid white;text-align:center;font-size:18px;font-weight:bold;line-height:68px;}
+    .third>li:hover{background-color:deeppink;}
+    .third>li a{text-decoration:none;color:white;}
+    
+    
+    .figure{color:white;border:5px groove; silver;margin-top:60px;width:1390px;}
+    .saber{width:1390px;height:220px;line-height:30px;color:white;clear:both;}
+    .saber>img{width:300px;height:200px;float:left;margin-top: 10px;}
+    .saber>p{font-size:20px;text-indent:2em;color:white;margin-left:20px;}
+
+    .archer{width:1390px;height:220px;line-height:30px;color:white;claer:both;position:relative;}
+    .archer>img{width:300px;height:200px;margin-top:10px;float:left;}
+    .archer>p{font-size:20px;text-indent:2em;color:white;}
+
+    .berserker_master{width:1390px;height:220px;line-height:30px;color:white;claer:both;position:relative;}
+    .berserker_master>img{width:300px;height:200px;margin-top:10px;float:left;}
+    .berserker_master>p{font-size:20px;text-indent:2em;color:white;}
+
+    .saber_master{width:1390px;height:220px;line-height:30px;color:white;claer:both;position:relative;}
+    .saber_master>img{width:300px;height:200px;margin-top:10px;float:left;}
+    .saber_master>p{font-size:20px;text-indent:2em;color:white;}
+
+    .rider_master{width:1390px;height:220px;line-height:30px;color:white;;claer:both;position:relative;}
+    .rider_master>img{width:300px;height:200px;margin-top:10px;float:left;}
+    .rider_master>p{font-size:20px;text-indent:2em;color:white;} 
+
+    .footer{width:1500px;height:600px;border:5px solid white;margin-left:-50px;margin-top:60px;}
+    .fifth{
+    width:1500px;
+    height:400px;
+    margin:0 auto;
+    clear:both;
+  }
+    .fifth>li
+    {float:left;
+    list-style:none;
+    text-align:center;
+    position:relative;
+    border:2px double white;
+    color: white;
+    width:496px;
+    height:546px;}
+    .content_three{text-align:left;text-indent:2em;font-size:23px;}
+  </style>
+  </head>
+
+
+  <body>
+  <div id="total">
+    <div id='header'>
+      <p>《Fate Stay Night》——<span style='color:purple'>命定之夜</span></p>
+      
+    </div>
+    <div class='nav'>
+      <ul class='first'>
+         <li><a href='#game'class='anchor'>关于游戏</a>
+            <ul class='dropfirst_one'>
+               <li><a href='https://baike.baidu.com/item/fate/stay%20night/35179'>《Fate stay night》</a></li>
+               <li><a href='https://www.bilibili.com/video/BV1vB42167tv/'>《Fate stay night》重制版</a></li>
+               <li><a href='https://game.bilibili.com/fgo/'>衍生作《Fate Grand Order》</a></li>
+            </ul> 
+                  </li>
+         <li><a href='#anime'class='anchor'>关于动画</a>
+             <ul class='dropfirst_two'>
+               <li><a href='https://www.bilibili.com/bangumi/play/ep239607'>《Fate 06》</li>
+               <li><a href='https://www.bilibili.com/bangumi/play/ep29919'>《Fate Zero》</a></li>
+               <li><a href='https://www.bilibili.com/bangumi/play/ep67704'>《Fate Unlimited Blade Works》</a></li>
+               <li><a href='https://www.bilibili.com/bangumi/play/ss26703?from_spmid=666.25.series.0'>《Fate Heaven's Fell》</a></li>
+               <li><a href='https://www.bilibili.com/bangumi/play/ep165004?from_spmid=666.19.0.0'>特别作品《卫宫家今天的饭》</a></li>
+               <li><a href='https://www.bilibili.com/bangumi/play/ss5747?spm_id_from=333.337.0.0'>fgo系列</a></li>
+             </ul>
+
+                  </li>
+          <li><a href='introduction page.html'class='individual'>站长简介</a></li>         
+         <li><a href='#figure'class='anchor'>人气角色</a>
+             <ul class="dropfirst_three">
+                <li><a href='https://baike.baidu.com/item/%E9%98%BF%E5%B0%94%E6%89%98%E8%8E%89%E9%9B%85%C2%B7%E6%BD%98%E5%BE%B7%E6%8B%89%E8%B4%A1/10430732'>阿尔托莉雅·潘德拉贡</a></li>
+                <li><a href='https://baike.baidu.com/item/%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80/5957645'>吉尔伽美什</a></li>
+                <li><a href='https://baike.baidu.com/item/%E4%BC%8A%E8%8E%89%E9%9B%85%E4%B8%9D%E8%8F%B2%E5%B0%94%C2%B7%E5%86%AF%C2%B7%E7%88%B1%E5%9B%A0%E5%85%B9%E8%B4%9D%E4%BC%A6/22697583'>伊莉雅丝菲尔·冯·爱因兹贝伦</a></li>
+                <li><a href='https://baike.baidu.com/item/%E5%8D%AB%E5%AE%AB%E5%A3%AB%E9%83%8E/3191065'>卫宫士郎</a></li>
+                <li><a href='https://baike.baidu.com/item/%E9%97%B4%E6%A1%90%E6%A8%B1/778771'>间桐樱</a></li>               
+             </ul>
+                  </li>
+         <li><a href='#activity'class='anchor'>线下活动</a>
+             <ul class='dropfirst_four'>
+                <li><a href='https://game.bilibili.com/fgo/fes2024Chaldea/about/'>FES·广州</a></li>
+                <li><a href='https://www.ali213.net/news/html/2024-8/860415.html#:~:text=%E6%9C%AC%E6%AC%A1%E6%B4%BB%E5%8A%A8%E4%B8%BA%E7%B2%89%E4%B8%9D%E4%BB%AC%E5%87%86%E5%A4%87%E4%BA%86%E4%BC%97%E5%A4%9A%E7%B2%BE%E5%BD%A9%E7%BA%B7%E5%91%88%E7%9A%84%E5%B1%95%E5%8C%BA%E5%92%8C%E6%B4%BB%E5%8A%A8%2C%E8%AE%A9%E6%88%91%E4%BB%AC%E4%B8%80%E8%B5%B7%E6%9D%A5%E5%9B%9E%E9%A1%BE%E4%B8%80%E4%B8%8B%E8%BF%99%E5%9C%BA%E7%9B%9B%E4%BC%9A%E7%9A%84%E4%BA%AE%E7%82%B9%E3%80%82%20%E8%BF%8E%E5%AE%BE%E6%B4%BB%E5%8A%A8%3A%E4%BB%A5GUDA%E5%AD%90%E4%B8%BA%E9%A6%96%E7%9A%84%E5%90%89%E7%A5%A5%E7%89%A9%E8%A7%92%E8%89%B2%E5%92%8C%E5%AE%98%E6%96%B9Coser%E5%9C%A8%E5%85%A5%E5%8F%A3%E5%A4%84%E8%BF%8E%E6%8E%A5%E7%B2%89%E4%B8%9D%2C%E6%88%90%E4%B8%BA%E8%AE%B8%E5%A4%9A%E4%BA%BA%E6%8B%8D%E7%85%A7%E7%95%99%E5%BF%B5%E7%9A%84%E9%A6%96%E9%80%89%E3%80%82%20%E8%BF%A6%E5%8B%92%E5%BA%95%E5%B1%95%E5%8C%BA%3A%E4%BB%A5%E6%96%B0%E4%BB%BB%E6%89%80%E9%95%BF%E6%88%88%E5%B0%94%E5%BE%B7%E9%B2%81%E5%A4%AB%E4%B8%BA%E4%B8%AD%E5%BF%83%2C%E8%AE%BE%E6%9C%89%22%E8%BF%A6%E5%8B%92%E5%BA%95%E5%AF%BB%E5%AE%9D%22%E3%80%81%22%E8%8B%B1%E7%81%B5%E5%8F%AC%E5%94%A4%E5%BF%AB%E7%85%A7%E5%AE%A4%22%E5%92%8C%22%E4%BE%A6%E6%8E%A2%E5%A4%A9%E8%8D%89%E4%B9%8B%E4%BA%8B%E4%BB%B6%E7%B0%BF%22%E4%B8%89%E7%A7%8D%E6%B8%B8%E4%B9%90%E8%AE%BE%E6%96%BD%E3%80%82,%E5%85%B6%E4%B8%AD%22%E8%BF%A6%E5%8B%92%E5%BA%95%E5%AF%BB%E5%AE%9D%22%E5%9B%A0%E5%85%B6Live%202D%20%E6%BC%94%E5%87%BA%E5%92%8C%E5%85%A8%E8%AF%AD%E9%9F%B3%E4%BD%93%E9%AA%8C%E5%A4%87%E5%8F%97%E6%AC%A2%E8%BF%8E%2C%E6%95%B4%E7%90%86%E5%88%B8%E5%BE%88%E5%BF%AB%E5%B0%B1%E8%A2%AB%E6%8A%A2%E7%A9%BA%E3%80%82'>九周年庆典</a></li>
+                <li><a href='https://www.bilibili.com/video/BV1Aw51zSEAR/?spm_id_from=333.337.search-card.all.click'>型月only</a></li>
+             </ul>
+                  </li>
+      </ul>
+    </div>
+    <div class='main_first'>
+      <div id='game_left'>
+        <h1 style="margin-top:10px"><a name='game'>《Fate Stay Night》·<span style='color:mediumpurple;'>游戏简介</span></a></h1>
+        <img id='introduction' src='images/fate.jpeg'></img>
+       <p class='content_one'>《Fate/stay night》是TYPE-MOON开发并最早于2004年1月30日在PC平台上发售的文字冒险游戏，也是TYPE-MOON公司商业化后初次亮相的作品，是Fate的系列作品之一，游戏平台为PC、PS2、PS Vita。2024年8月7日，游戏重制版上架Steam，售价108元。 </p>
+           <p class='content_one'>《Fate/stay night》中玩家扮演卫宫士郎，一个偶然与剑士Servant（Saber）签订契约的魔术师，参与争夺能实现任何愿望的圣杯的战争。游戏中有七位Master和他们的Servant，每个Servant属于不同的职阶。玩家的选择会影响剧情走向，游戏拥有三条主线，每条线都提供了不同的角色互动和故事结局。</p>
+      </div>
+      <div id='menu_game'>
+      <ul class='second'>
+        <li><a href='https://baike.baidu.com/item/%E5%A5%88%E9%A1%BB%E8%98%91%E8%8F%87/3761744'>作者</a></li>
+        <li><a href='https://baike.baidu.com/item/%E6%AD%A6%E5%86%85%E5%B4%87/885279'>画师</a></li>
+        <li><a href='https://baike.baidu.com/item/Fate/Grand%20Order/15091274'>衍生作《Fate Grand Order》</a></li>
+      </ul>
+
+      </div> 
+    </div>
+    <div class='main_second'>
+      <div id='anime_left'>
+         <h1 style="margin-top:4px"><a name='anime'>《Fate Stay Night》·<span style='color:mediumpurple;'>动画系列简介</span></a></h1>
+         
+<p class='content_two'>于2006年由Studio DEEN改编制作为同名电视动画<span style='color:mediumpurple;'>《fate 06》</span>，以原作的Fate路线为主，并穿插其他两线的部分内容，于2006年1月6日播放至2006年6月16日，共24话，已完结。</p></li>
+<p class='content_two'>游戏及动画作品《Fate/stay night》的前传,由日本作家<span style='color:mediumpurple;'>虚渊玄</span>著作，全4卷（文库版为6卷）,该作品亦改编成同名电视动画<span style='color:mediumpurple;'>《Fate/Zero》</span>，讲述的是<span style='color:mediumpurple;'>第四次圣杯战争</span>时的故事。</p>
+<p class='content_two'>于2014年由<span style='color:mediumpurple;'>ufotable</span>以原作的Unlimited Blade Works路线改编制作为电视动画<span style='color:mediumpurple;'>《Fate/stay night》[Unlimited Blade Works]</span>，于2014年10月开始播放，共两季，全26话，已完结。</p></li>
+<p class='content_two'>由<span style='color:mediumpurple;'>ufotable</span>以原作的Heaven's Feel路线改编制作为剧场版动画<span style='color:mediumpurple;'>《Fate/stay night》 [Heaven's Feel]</span>，于2017年10月14日开始上映，全三章。</p></li>
+<p class='content_two'>《卫宫家今天的饭》改编自<span style='color:mediumpurple;'>TAa</span>创作的同名漫画作品，由<span style='color:mediumpurple;'>ufotable</span>负责制作。动画第1话于2017年12月31日在<span style='color:mediumpurple;'>“Fate Project 大晦日 TV Special 2017”</span>先行放送，于2018年1月25日正式在<span style='color:mediumpurple;'>AbemaTV</span>发布。</p>
+<p class='content_two'>改编自<span style='color:mediumpurple;'>TYPE-MOON</span>发行的同名游戏<span style='color:mediumpurple;'>《Fate/Grand Order》</span>的电视动画，由<span style='color:mediumpurple;'>Lay-duce</span>制作，<span style='color:mediumpurple;'>难波日登志</span>担任导演，剧情改编自游戏主线故事·第一部·序章，于2016年12月31日在TOKYO MX、NicoNico动画等电视台及视频网站播出。电视动画<span style='color:mediumpurple;'>《Fate/Grand Order -绝对魔兽战线巴比伦尼亚-》</span>于2019年10月5日发送。</p>
+
+      </div>
+      <div id='menu_anime'>
+        <ul class='third'>
+          <li><a href='https://www.bilibili.com/bangumi/play/ep239607'style='color:white;text-decoration:none'>《Fate 06》</a></li>
+          <li><a href='https://www.bilibili.com/bangumi/play/ep29919'style='color:white;text-decoration:none'>《Fate Zero》</a></li>
+          <li><a href='https://www.bilibili.com/bangumi/play/ep67704'style='color:white;text-decoration:none'>《Fate Unlimited Blade Works》</a></li>
+          <li><a href='https://www.bilibili.com/bangumi/play/ss26703?from_spmid=666.25.series.0'style='color:white;text-decoration:none'>《Fate Heaven's Fell》</a></li>
+          <li><a href='https://www.bilibili.com/bangumi/play/ep165004?from_spmid=666.19.0.0'style='color:white;text-decoration:none'>特别作品《卫宫家今天的饭》</a></li>
+          <li><a href='https://www.bilibili.com/bangumi/play/ss5747?spm_id_from=333.337.0.0'style='color:white;text-decoration:none'>fgo系列</a></li> 
+        </ul>
+      </div>
+</div>
+
+<div class='figure'>
+      <h1 style="margin-top:4px"><a name='figure'>《Fate Stay Night》·<span style='color:mediumpurple;'>人气角色</span></a></h1>
+  <div class="saber"><hr color='white'>
+    <img src='images/saber.jpeg'/>
+    <p><span style='color:blue'>阿尔托莉雅·潘德拉贡</span>，日本文字冒险游戏《Fate/stay night》及其衍生作品中的女主角之一。 生前为古不列颠传说中的亚瑟王，在第四、第五次圣杯战争中一直以“Saber”职阶被召唤到现世参加圣杯战争，在第四次圣杯战争中的御主是卫宫切嗣，第五次圣杯战争中是卫宫士郎，拥有身为骑士王的荣耀和骄傲。出生时因女性身份无法继承王位，被尤瑟王托付给骑士艾克托抚养。15岁时拔出石中剑成为新王，但因性别隐藏身份，以男性形象统治不列颠。晚年因<span style='color:blue'>兰斯洛特</span>与<span style='color:blue'>桂妮薇儿</span>的背叛导致圆桌骑士团分裂，最终在<span style='color:blue'>卡姆兰战役</span>中战死</p>
+  </div>
+  <div class="archer"><hr color='white'>
+   <img src='images/archer.jpeg'/>
+   <p><span style='color:darkgoldenrod;'>吉尔伽美什</span>，日本TYPE-MOON公司原作的《Fate》系列作品中的角色，其主要登场的作品有《Fate/stay night》、《Fate/Zero》、《Fate/EXTRA CCC》、《Fate/strange Fake》、《Fate/Grand Order》、《Fate/EXTELLA》以及《Fate/EXTELLA LINK》。在“圣杯战争”中大多数以Archer的职阶被召唤到现世，亦可不需要局限在职阶之上，以自身的名字作为职阶现世（Gilgamesh）。其真实身份为古代美索不达米亚地区苏美尔早王朝的都市国家<span style='color:darkgoldenrod;'>乌鲁克</span>的第五任国王，人类最古老的史诗<span style='color:darkgoldenrod;'>《吉尔伽美什》</span>的主人公，人类史最古老的“英雄王”。他有着“三分之二为神，三分之一为人”的神性，性格高傲，曾是自认为无人能敌的暴君。</p></hr>
+  </div>
+  <div class="berserker_master"><hr color='white'>
+    <img src='images/berserker_master.jpeg'>
+    <p> <span style='color:red'>伊莉雅斯菲尔·冯·爱因兹贝伦</span>，卫宫切嗣的亲生女儿，<span style='color:red'>爱因兹贝伦家族</span>派来参加第五次圣杯战争的人造人，被家族当做道具，本身是圣杯的容器。
+性格天真活泼，但因家族的关系导致性格有些扭曲。
+来日本的目的之一是杀掉背叛家族的父亲卫宫切嗣，但得知父亲已死，于是对卫宫士郎产生了兴趣。</p>
+  </div>
+  <div class="saber_master"><hr color='white'>
+    <img src='images/saber_master.jpeg'/>
+    <p><span style='color:brown;'>卫宫士郎</span>，日本文字冒险游戏《Fate/stay night》及其衍生作品中的男主角，穗群原学园高中部二年级学生，十年前冬木市第四次圣杯战争引起的火灾中唯一的幸存者。因为和卫宫切嗣的约定而以“<span style='color:brown;'>正义的伙伴</span>”为目标，由于小时候的经历而拘泥于救助生命，持续苦恼着。在第五次圣杯战争中作为Saber的御主（Master）出场。</p>
+  </div>
+  <div class="rider_master"><hr color='white'>
+    <img src='images/rider_master.jpeg'/>
+    <p> <span style='color:mediumpurple'>间桐樱</span>，穗群原学园一年级学生，在同年级之中是出名的美人。性格温柔、善良、沉静、谨慎、伶俐、老实、有些自卑。由于一些难忘的经历对前辈卫宫士郎抱有好感。名义上为<span style='color:mediumpurple'>间桐慎二</span>之妹，实则是远坂家<span style='color:mediumpurple'>远坂时臣</span>的女儿，<span style='color:mediumpurple'>远坂凛</span>的妹妹，为使其不浪费魔术才能，故过继给间桐家（魔术师家族只能由一人传承）。第五次圣杯战争Rider<span style='color:mediumpurple'>美杜莎</span>的真正召唤者，间桐家魔术的继承者。象征平稳的日常的女主角，但是在她身上也有着不为人知的秘密。</p></hr>
+    </div>
+  </div>
+
+
+<div class='footer'>
+  <h1 style="color:white;text-align:center;"><a name='activity'>线下活动</a></h1>
+  <hr><ul class='fifth'>
+    <li>
+      <h1 style='width:496px;letter-spacing:2px'>FES2024·广州</h1>
+      <hr><img src='images/one.jpeg'width=496px height='230px'>
+      <p class='content_three'>2024年1月26日至28日，<span style='color:mediumpurple'>广州保利世贸博览馆</span>化身迦勒底，迎来了《命运-冠位指定》（下简称《FGO》）的特别纪念展。这场属于《FGO》玩家的盛会，包含游戏内经典场景的震撼还原、趣味互动游戏与游艺设施、缤纷舞台节目等众多内容。更有从日本赶来参加盛会的人气声优与游戏开发总监与粉丝们现场互动。</p>
+       </li>
+     <li>
+      <h1 style='width:496px;letter-spacing:2px'>九周年庆典</h1>
+      <hr><img src='images/second.jpeg'width='496px' height='230px'>
+      <p class='content_three'><span style='color:mediumpurple'>千叶幕张展览馆</span>举办了盛大的9周年纪念活动"FGO Expo Fate/Grand Order Fes. 2024 9th Anniversary"。本次活动为粉丝们准备了众多精彩纷呈的展区和活动。</p>
+       
+     </li>
+      <li>
+      <h1>型月only</h1>
+      <hr><img src='images/third.jpeg'width='496px' height='230px'>
+      <p class='content_three'>日本游戏公司<span style='color:mediumpurple'>型月（Type - Moon）</span>相关的特定活动或场合,活动一般会聚焦于型月的各类作品,包括《Fate/stay night》《月姬》《空之境界》。有相关的周边产品售卖、同人创作展示、粉丝交流以及一些与型月世界观相关的主题活动等，是型月粉丝们聚集和交流的重要机会，能让粉丝们深入体验型月作品的魅力，感受其独特的世界观和丰富的角色设定。</p>
+        
+      </li>
+  </ul>
+</div>
+<div>
+</div>
+  </div>
+  </body>
+  </html>
+   
