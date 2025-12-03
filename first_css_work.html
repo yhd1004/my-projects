@@ -12,12 +12,25 @@
 		*{
 			margin:0;
 			padding:0;
+			text-decoration:none;
 		}
 		body{
 			width:1440px;
 			height:600px;
-			background:linear-gradient(to right,pink,white);
+			background:linear-gradient(to right,pink,skyblue);
 		}
+		.nav{
+			width:1440px;
+			height:80px;
+			font-size:27px;
+			line-height:80px;
+			color:white;
+			background:linear-gradient(to right,pink,skyblue);
+			text-align:center;
+			border-bottom:3px solid white;
+		}
+		.nav a{color:white;}
+		.nav a:hover{color:skyblue;}
 		.format{
 			width:800px;
 			height:420px;
@@ -25,44 +38,56 @@
 			margin-top:90px;
 			border:5px solid white;
 			border-radius:5px;
-			font-size:30px;
+			font-size:27px;
 			line-height:60px;
 			color:white;
 			font-weight:bolder;
 			text-align:center;
 		}
 		.red:hover{background-color:red;}
+		.red a{color:darkred;}
 		.orange:hover{background-color:orange;}
-		.yellow:hover{background-color:yellow;}
+		.orange a{color:orangered;}
+		.yellow:hover{background-color:lightgoldenrodyellow;}
+		.yellow a{color:yellow;}
 		.green:hover{background-color:green;}
+		.green a{color:greenyellow;}
 		.blue:hover{background-color:blue;}
+		.blue a{color:skyblue;}
 		.cyan:hover{background-color:rgb(0,255,255);}
+		.cyan a{color:darkcyan;}
 		.purple:hover{background-color:purple;}
+		.purple a{color: mediumpurple;}
+
+		
 </style>
 </head>
 <body>
+	<div class='nav'>
+		<h1><a href="second_css_work_page2.html">彩虹颜色介绍</a></h1>
+	</div>
 	<div class='format'>
 		<table border='0' width='800px'height='420px'>
 			<tr class='red'>
-				<td>red</td>
+				<td><a href='second_css_work_page2.html'>red</a></td>
 			</tr>
 			<tr class='orange'>
-				<td>orange</td>
+				<td><a href='second_css_work_page2.html'>orange</a></td>
 			</tr>
 			<tr class='yellow'>
-				<td>yellow</td>
+				<td><a href='second_css_work_page2.html'>yellow</a></td>
 			</tr>
 			<tr class='green'>
-				<td>green</td>
+				<td><a href='second_css_work_page2.html'>green</a></td>
 			</tr>
 			<tr class='cyan'>
-				<td>cyan</td>
+				<td><a href='second_css_work_page2.html'>cyan</a></td>
 			</tr>
 			<tr class='blue'>
-				<td>blue</td>
+				<td><a href='second_css_work_page2.html'>blue</a></td>
 			</tr>
 			<tr class='purple'>
-				<td>purple</td>
+				<td><a href='second_css_work_page2.html'>purple</a></td>
 			</tr>
 		</table>
 </div>
